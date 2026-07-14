@@ -1,0 +1,481 @@
+
+/* Mobile */
+
+@media(max-width:768px){
+    .menu{
+        display:block;
+    }
+
+    .navbar{
+        padding:0 25px;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .nav-links{
+
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        background:#111827;
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+        padding:30px 0;
+        transition:.4s;
+    }
+
+    .nav-links li{
+        width:90%;
+        margin:0 auto;
+    }
+
+    .nav-links li a{
+        display:block;
+        padding:15px;
+        background:#b2263b;
+        border:1px solid #38bdf8;
+        border-radius:10px;
+        color:white;
+        text-decoration:none;
+        transition:0.3s;
+
+    }
+
+    .nav-links li a:hover{
+        background:#38bdf8;
+        color:#111827;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+}
+
+/* Responsive */ 
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:100px 25px 40px;
+}
+
+.left{
+    width:100%;
+}
+
+.right{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.circle{
+    width:260px;
+    height:260px;
+}
+.circle:hover{
+     transform:scale(1.05);
+    transition:.4s;
+}
+
+
+.right img{
+    width:260px;
+}
+
+.left h1{
+    font-size:42px;
+}
+
+.left h2{
+    font-size:26px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.social{
+    justify-content:center;
+}
+
+}
+
+/*==========================
+     MOBILE RESPONSIVE about section
+==========================*/
+
+@media(max-width:768px){
+
+.about{
+    display:flex;
+    flex-direction:column;
+    padding:25px 25px;
+}
+
+.about-left,
+.about-center,
+.about-right{
+    width:100%;
+}
+
+.l-left{
+    display:flex;
+    justify-content:center;
+}
+
+.left-left img{
+    width:260px;
+}
+
+.left-center{
+    text-align:center;
+}
+
+
+.about-center h2,
+.about-right h2{
+    font-size:28px;
+}
+
+.resume-btn{
+    margin:auto;
+    margin-top:25px;
+}
+
+.about-center{
+    text-align:center;
+}
+
+.about-center h2,
+.about-right h2{
+    font-size:28px;
+}
+
+.about-right{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:100%;
+
+
+}
+
+.resume-btn{
+    margin:auto;
+    margin-top:25px;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    gap: 15px;
+    width:100%;
+    align-items:center;
+}
+}
+
+
+
+
+
+
+/*==========================
+       MOBILE stats
+==========================*/
+
+
+@media (max-width:768px ){
+       
+    .status{
+    margin-left:20px;
+    margin-right:20px;
+}   
+    .stats{
+         width:100%;
+         height:50px;  
+         padding:5x 20px;
+    }
+
+    .stats{
+        width:100%;
+        gap:2px;
+       
+    }
+
+    .card{
+        width:100px;
+        padding:9px;
+        border-radius:8px;
+    }
+
+    .card i{
+        align-items:center;
+        font-size:20px;
+        margin-bottom:5px;
+    }
+
+    .card h2{
+        font-size:10px;
+        margin:2px 0;
+    }
+
+    .card p{
+        font-size:5px;
+        line-height:20px;
+    }
+
+}
+
+/* project section */
+ 
+
+/*==========================
+      MOBILE PROJECTS
+==========================*/
+
+@media screen and (max-width:768px){
+
+.projects{
+    padding:40px 20px;
+}
+
+.project-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.project-heading h2{
+    font-size:28px;
+}
+
+.project-heading a{
+    font-size:16px;
+}
+
+.project-container{
+    display:flex;
+    overflow-x:auto;
+    gap:18px;
+
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:none;
+}
+
+.project-container::-webkit-scrollbar{
+    display:none;
+}
+
+.project-card{
+    min-width:100%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+
+    border-radius:25px;
+    background:#111827;
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.project-content p{
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:20px;
+}
+
+.project-btn{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.demo-btn{
+    padding:12px 18px;
+    font-size:15px;
+}
+
+.github{
+    font-size:38px;
+}
+}
+
+/*=========================
+      MOBILE sevices
+==========================*/
+
+@media (max-width:768px){
+
+.services{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:15px;
+    padding:40px 20px;
+
+}
+
+.services-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.services-heading h2{
+    font-size:28px;
+}
+
+.services-heading a{
+    font-size:16px;
+}
+
+
+
+.service-card{
+
+    min-width:100%;
+    padding:20px 15px;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    border-radius:16px;
+
+}
+
+.service-card i{
+
+    font-size:42px;
+    margin-bottom:15px;
+
+}
+
+.service-text h3{
+
+    font-size:8px;
+    margin-bottom:10px;
+
+}
+
+.service-text p{
+
+    display:none;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(124,92,255,.45);
+
+}
+
+}
+
+/*=========================
+       MOBILE let us work together
+==========================*/
+
+@media(max-width:768px){
+
+.contact{
+    padding:50px 20px;
+}
+
+.contact-box{
+    flex-direction:column;
+    padding:25px;
+}
+
+.contact-left h2{
+    font-size:28px;
+}
+
+.input-box{
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-right{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.contact-info{
+    width:100%;
+    align-items:flex-start;
+}
+
+.contact-image img{
+    width:220px;
+}
+
+.send-btn{
+    width:100%;
+}
+
+}
+
+
+/*=========================
+        MOBILE
+==========================*/
+
+@media(max-width:768px){
+
+.footer{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.footer-logo h2{
+    font-size:34px;
+}
+
+.footer-text p{
+    font-size:14px;
+}
+
+.footer-icons{
+    gap:20px;
+}
+
+.footer-icons a{
+    font-size:22px;
+}
+
+.top-btn{
+    width:45px;
+    height:45px;
+}
+
+}
+
+
